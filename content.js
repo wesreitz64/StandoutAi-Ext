@@ -46,7 +46,5 @@ function addFloatingButton() {
     });
   }
   
-  // Get the current tab's ID and then execute the script
-  chrome.tabs.getCurrent(function(tab) {
-    addFloatingButton();
-  });
+  // Inject the button when the script runs
+  addFloatingButton();
